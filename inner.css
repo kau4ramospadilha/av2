@@ -1,0 +1,8 @@
+/* FinEduca — inner.css (páginas internas genéricas) */
+.page-hero-mini {
+  padding-block: calc(var(--nav-h) + 5rem) 5rem;
+  background: var(--clr-bg2);
+  border-bottom: 1px solid var(--clr-border);
+}
+.page-title { font-size:var(--fz-hero); font-weight:800; margin-bottom:1rem; }
+.page-sub   { font-size:var(--fz-lg); color:var(--clr-text2); max-width:58ch; font-weight:300; margin-bottom:2rem; }

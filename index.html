@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FinEduca — Educação financeira moderna para jovens. Aprenda organização, investimentos e ativos internacionais." />
+  <meta name="theme-color" content="#050a0e" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="FinEduca — Educação Financeira" />
+  <meta property="og:description" content="Aprenda finanças pessoais e investimentos de forma clara e acessível." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:image"       content="assets/images/og-cover.png" />
+
+  <title>FinEduca — Educação Financeira & Ativos Internacionais</title>
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+  <!-- ── Skip link (WCAG 2.4.1) ── -->
+  <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
+
+  <!-- ════════════════════════════
+       NAVBAR
+       ════════════════════════════ -->
+  <header role="banner">
+    <nav class="navbar" id="navbar" aria-label="Navegação principal">
+      <div class="nav-inner">
+        <a href="index.html" class="logo" aria-label="FinEduca — Página inicial">
+          Fin<span>Educa</span>
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-expanded="false"
+                aria-controls="nav-links"
+                aria-label="Abrir menu de navegação">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="index.html"             aria-current="page">Início</a></li>
+          <li><a href="pages/modulos.html">Módulos</a></li>
+          <li><a href="pages/investimentos.html">Investimentos</a></li>
+          <li><a href="pages/internacionais.html">Internacional</a></li>
+          <li><a href="pages/sobre.html">Sobre</a></li>
+          <li><a href="#calculadora" class="btn btn-primary nav-cta">Calculadora</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ════════════════════════════
+       CONTEÚDO PRINCIPAL
+       ════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── HERO ── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge" aria-label="Categoria">📚 Educação Financeira para Jovens</div>
+
+        <h1 class="hero-title" id="hero-title">
+          Seu futuro<br>
+          <span class="highlight">financeiro</span><br>
+          começa aqui.
+        </h1>
+
+        <p class="hero-sub">
+          Aprenda a organizar seu dinheiro, planejar gastos e investir com inteligência —
+          do Tesouro Direto até o S&amp;P 500, de forma clara e acessível.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="pages/modulos.html" class="btn btn-primary">Explorar módulos</a>
+          <a href="#calculadora"       class="btn btn-ghost">Calculadora →</a>
+        </div>
+
+        <dl class="hero-stats" aria-label="Estatísticas do projeto">
+          <div class="hero-stat">
+            <dt class="hero-stat-l">Módulos</dt>
+            <dd class="hero-stat-n">4</dd>
+          </div>
+          <div class="stat-div" role="separator" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <dt class="hero-stat-l">Conteúdo</dt>
+            <dd class="hero-stat-n">100%</dd>
+          </div>
+          <div class="stat-div" role="separator" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <dt class="hero-stat-l">Gratuito</dt>
+            <dd class="hero-stat-n">∞</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- Visual decorativo -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="card-float cf1">
+          <span class="cf-icon">💰</span>
+          <span><strong class="cf-name">Poupança mensal</strong><span class="cf-val">+R$ 350,00</span></span>
+        </div>
+        <div class="card-float cf2">
+          <span class="cf-icon">📈</span>
+          <span><strong class="cf-name">Tesouro Direto</strong><span class="cf-val">IPCA + 6,5% a.a.</span></span>
+        </div>
+        <div class="card-float cf3">
+          <span class="cf-icon">🌍</span>
+          <span><strong class="cf-name">S&amp;P 500 (ETF)</strong><span class="cf-val">USD 12.40 ▲ 1.2%</span></span>
+        </div>
+        <div class="chart-mock">
+          <svg viewBox="0 0 260 100" fill="none" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="gline" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"   stop-color="#22d3a0" stop-opacity=".4"/>
+                <stop offset="100%" stop-color="#22d3a0" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0 80 C30 70,60 52,90 46 C120 40,145 55,175 36 C205 18,232 14,260 6"
+                  stroke="#22d3a0" stroke-width="2.5" fill="none"/>
+            <path d="M0 80 C30 70,60 52,90 46 C120 40,145 55,175 36 C205 18,232 14,260 6 L260 100 L0 100Z"
+                  fill="url(#gline)"/>
+            <circle cx="260" cy="6" r="4" fill="#22d3a0"/>
+          </svg>
+          <p class="chart-label">Crescimento patrimonial ao longo do tempo</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── POR QUE APRENDER? ── -->
+    <section class="section sobre-quick" aria-labelledby="pilares-title">
+      <div class="container">
+        <div class="section-tag">O Projeto</div>
+        <h2 class="section-title" id="pilares-title">Por que aprender sobre finanças?</h2>
+        <p class="section-sub">
+          Educação financeira é a habilidade mais impactante que um jovem pode desenvolver.
+          Aqui você encontra quatro pilares que transformam sua relação com o dinheiro.
+        </p>
+        <ul class="pilares-grid" role="list">
+          <li class="pilar-card reveal">
+            <span class="pilar-icon" aria-hidden="true">🎯</span>
+            <h3>Organização</h3>
+            <p>Controle seus ganhos e gastos com clareza usando orçamento e metas.</p>
+          </li>
+          <li class="pilar-card reveal">
+            <span class="pilar-icon" aria-hidden="true">📊</span>
+            <h3>Planejamento</h3>
+            <p>Defina objetivos de curto e longo prazo e trace um caminho para alcançá-los.</p>
+          </li>
+          <li class="pilar-card reveal">
+            <span class="pilar-icon" aria-hidden="true">💡</span>
+            <h3>Investimento</h3>
+            <p>Faça seu dinheiro trabalhar por você com renda fixa e variável.</p>
+          </li>
+          <li class="pilar-card reveal">
+            <span class="pilar-icon" aria-hidden="true">🌐</span>
+            <h3>Diversificação</h3>
+            <p>Acesse mercados globais com ETFs e BDRs para proteger seu capital.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── MÓDULOS ── -->
+    <section class="section modulos" aria-labelledby="modulos-title">
+      <div class="container">
+        <div class="section-tag">Módulos</div>
+        <h2 class="section-title" id="modulos-title">Conteúdos do projeto</h2>
+        <ul class="modulos-grid" role="list">
+
+          <li class="modulo-card modulo-card--featured reveal">
+            <span class="modulo-num" aria-hidden="true">01</span>
+            <span class="modulo-icon" aria-hidden="true">🗂️</span>
+            <h3>Organização Financeira</h3>
+            <p>Aprenda a montar um orçamento pessoal, identificar gastos desnecessários e criar o hábito de registrar suas finanças.</p>
+            <ul class="modulo-topics" aria-label="Tópicos do módulo">
+              <li>Receitas × Despesas</li>
+              <li>Regra 50-30-20</li>
+              <li>Fundo de emergência</li>
+              <li>Aplicativos de controle</li>
+            </ul>
+            <a href="pages/modulos.html#org" class="modulo-link">Ver módulo completo <span aria-hidden="true">→</span></a>
+          </li>
+
+          <li class="modulo-card reveal">
+            <span class="modulo-num" aria-hidden="true">02</span>
+            <span class="modulo-icon" aria-hidden="true">📅</span>
+            <h3>Planejamento de Gastos</h3>
+            <p>Entenda como planejar compras, evitar parcelamentos e usar o crédito de forma consciente.</p>
+            <ul class="modulo-topics" aria-label="Tópicos do módulo">
+              <li>Compras planejadas vs. por impulso</li>
+              <li>Cartão de crédito consciente</li>
+              <li>Metas SMART</li>
+            </ul>
+            <a href="pages/modulos.html#plan" class="modulo-link">Ver módulo completo <span aria-hidden="true">→</span></a>
+          </li>
+
+          <li class="modulo-card reveal">
+            <span class="modulo-num" aria-hidden="true">03</span>
+            <span class="modulo-icon" aria-hidden="true">💸</span>
+            <h3>Investimentos Básicos</h3>
+            <p>Do Tesouro Direto à renda variável — comece a investir mesmo com pouco dinheiro.</p>
+            <ul class="modulo-topics" aria-label="Tópicos do módulo">
+              <li>Renda fixa vs. variável</li>
+              <li>Tesouro Direto, CDB, LCI</li>
+              <li>Ações e FIIs</li>
+            </ul>
+            <a href="pages/investimentos.html" class="modulo-link">Ver módulo completo <span aria-hidden="true">→</span></a>
+          </li>
+
+          <li class="modulo-card reveal">
+            <span class="modulo-num" aria-hidden="true">04</span>
+            <span class="modulo-icon" aria-hidden="true">🌍</span>
+            <h3>Ativos Internacionais</h3>
+            <p>Invista no exterior, diversifique seu patrimônio e proteja-se da desvalorização cambial.</p>
+            <ul class="modulo-topics" aria-label="Tópicos do módulo">
+              <li>BDRs e ETFs globais</li>
+              <li>Dólar e proteção cambial</li>
+              <li>S&amp;P 500, NASDAQ</li>
+            </ul>
+            <a href="pages/internacionais.html" class="modulo-link">Ver módulo completo <span aria-hidden="true">→</span></a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── CALCULADORA ── -->
+    <section class="section calc-home" id="calculadora" aria-labelledby="calc-title">
+      <div class="container">
+        <div class="section-tag">Ferramenta</div>
+        <h2 class="section-title" id="calc-title">Calculadora de Juros Compostos</h2>
+        <p class="section-sub">Veja como seu dinheiro cresce ao longo do tempo.</p>
+
+        <div class="calc-box">
+          <div class="calc-fields">
+            <div class="calc-field">
+              <label for="c-inicial">Investimento inicial (R$)</label>
+              <input type="number" id="c-inicial" value="1000" min="0" aria-describedby="calc-help" />
+            </div>
+            <div class="calc-field">
+              <label for="c-mensal">Aporte mensal (R$)</label>
+              <input type="number" id="c-mensal" value="200" min="0" />
+            </div>
+            <div class="calc-field">
+              <label for="c-taxa">Taxa anual (%)</label>
+              <input type="number" id="c-taxa" value="10" step="0.1" min="0" max="100" />
+            </div>
+            <div class="calc-field">
+              <label for="c-anos">Período (anos)</label>
+              <input type="number" id="c-anos" value="10" min="1" max="50" />
+            </div>
+            <button class="btn btn-primary" id="btn-calc" aria-label="Calcular juros compostos">Calcular</button>
+          </div>
+
+          <p id="calc-help" class="sr-only">Preencha os campos e clique em Calcular para ver a projeção.</p>
+
+          <div class="calc-results" role="region" aria-live="polite" aria-label="Resultado do cálculo">
+            <div class="calc-result-card">
+              <span class="result-label">Total investido</span>
+              <output class="result-value" id="res-investido" for="c-inicial c-mensal c-anos">R$ 25.000,00</output>
+            </div>
+            <div class="calc-result-card calc-result-card--dest">
+              <span class="result-label">Montante final</span>
+              <output class="result-value" id="res-final" for="c-inicial c-mensal c-taxa c-anos">R$ 44.650,23</output>
+            </div>
+            <div class="calc-result-card">
+              <span class="result-label">Rendimento</span>
+              <output class="result-value result-value--green" id="res-rendimento">R$ 19.650,23</output>
+            </div>
+          </div>
+
+          <div class="calc-canvas-wrap">
+            <canvas id="calcChart" width="600" height="240"
+                    role="img" aria-label="Gráfico de crescimento do investimento ao longo dos anos"></canvas>
+          </div>
+          <p class="calc-disclaimer" role="note">* Simulação educacional. Não considera inflação, impostos ou taxas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DICAS ── -->
+    <section class="section dicas-section" aria-labelledby="dicas-title">
+      <div class="container">
+        <div class="section-tag">Dicas</div>
+        <h2 class="section-title" id="dicas-title">Regras de ouro das finanças</h2>
+        <ul class="dicas-grid" role="list">
+          <li class="dica-card reveal"><span class="dica-n" aria-hidden="true">01</span>
+            <h3>Pague-se primeiro</h3>
+            <p>Ao receber, separe imediatamente uma parte para poupar antes de gastar.</p>
+          </li>
+          <li class="dica-card reveal"><span class="dica-n" aria-hidden="true">02</span>
+            <h3>Regra 50-30-20</h3>
+            <p>50% para necessidades, 30% para desejos e 20% para poupança e investimentos.</p>
+          </li>
+          <li class="dica-card reveal"><span class="dica-n" aria-hidden="true">03</span>
+            <h3>Fundo de emergência</h3>
+            <p>Tenha 3 a 6 meses de despesas em alta liquidez antes de qualquer investimento.</p>
+          </li>
+          <li class="dica-card reveal"><span class="dica-n" aria-hidden="true">04</span>
+            <h3>Evite dívidas caras</h3>
+            <p>Rotativo do cartão tem juros de ~400% a.a. no Brasil. Pague sempre a fatura inteira.</p>
+          </li>
+          <li class="dica-card reveal"><span class="dica-n" aria-hidden="true">05</span>
+            <h3>Comece cedo</h3>
+            <p>Os juros compostos trabalham para quem começa cedo. Tempo é o maior aliado.</p>
+          </li>
+          <li class="dica-card reveal"><span class="dica-n" aria-hidden="true">06</span>
+            <h3>Diversifique</h3>
+            <p>Não coloque todos os ovos na mesma cesta. Distribua entre diferentes ativos.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── CTA SOBRE ── -->
+    <section class="cta-sobre" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title">Conheça a equipe por trás do projeto</h2>
+        <p>Artur, Kauã e Davi são estudantes de Sistemas para Internet que criaram este projeto para tornar a educação financeira acessível a todos.</p>
+        <div class="cta-btns">
+          <a href="pages/sobre.html"     class="btn btn-primary">Conheça a equipe</a>
+          <a href="pages/modulos.html"   class="btn btn-ghost">Ver módulos</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════
+       FOOTER
+       ════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="FinEduca — Página inicial">Fin<span>Educa</span></a>
+          <p>Educação financeira acessível para jovens brasileiros.</p>
+        </div>
+        <nav class="footer-col" aria-label="Links de módulos">
+          <strong>Módulos</strong>
+          <a href="pages/modulos.html">Organização Financeira</a>
+          <a href="pages/modulos.html#plan">Planejamento de Gastos</a>
+          <a href="pages/investimentos.html">Investimentos</a>
+          <a href="pages/internacionais.html">Ativos Internacionais</a>
+        </nav>
+        <nav class="footer-col" aria-label="Links úteis">
+          <strong>Projeto</strong>
+          <a href="pages/sobre.html">Sobre nós</a>
+          <a href="#calculadora">Calculadora</a>
+          <a href="pages/sobre.html#git">Git &amp; Deploy</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 FinEduca — Projeto acadêmico. Sistemas para Internet.</p>
+        <p>Feito por <a href="pages/sobre.html">Artur · Kauã · Davi</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/calculadora.js"></script>
+</body>
+</html>
